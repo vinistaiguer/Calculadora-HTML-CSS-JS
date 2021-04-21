@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+        <div class="fundo">
+            <h1 class="" style="color: rgb(255, 145, 0);">
+                <table class="tablebtn">
+                        <a href="https://www.w3schools.com/html/"><button id="htmlbtn" class="btn3">HTML</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.w3schools.com/js/"><button id="jsbtn" class="btn3">JavaScript</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.w3schools.com/css/"><button id="cssbtn" class="btn3">CSS</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </table>
+            </h1>
+
+            <div class="escritaLateral">
+                <h1 alt="nome1" class="nome1">VINICIUS</h1>
+                <H1 alt="nome2" class="nome2">STAIGUER</H1>
+            </div>
+
+            <div class="calculadora">
+
+                <svg width="120" height="100" viewBox="0 0 40 60">
+                    <polygon class="triangulo" fill="none" stroke="#fff" stroke-width="2" points="16,1 32,32 1,32 "/>
+                    <text class="calcular" x="0" y="45" fill="#fff">Calculando...</text>
+                </svg>
+
+                <p id="resultado"></p>
+                <table>
+                    
+                    <tr>
+                        <td><button class="btn" onclick="clean()" >C</button></td>
+                        <td><button class="btn" onclick="back()">
+                            <svg class="excluir" .excluir{width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"}>
+                            <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+                            <line x1="18" y1="9" x2="12" y2="15" />
+                            <line x1="12" y1="9" x2="18" y2="15" />
+                          </svg>
+                          
+                        </button></td>
+                        <td><button class="btn" onclick="insert('/')">/</button></td>
+                        <td><button class="btn2" onclick="insert('*')">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="insert('7')">7</button></td>
+                        <td><button class="btn" onclick="insert('8')">8</button></td>
+                        <td><button class="btn" onclick="insert('9')">9</button></td>
+                        <td><button class="btn2">%</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="insert('4')">4</button></td>
+                        <td><button class="btn" onclick="insert('5')">5</button></td>
+                        <td><button class="btn" onclick="insert('6')">6</button></td>
+                        <td><button class="btn2" onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="insert('1')">1</button></td>
+                        <td><button class="btn" onclick="insert('2')">2</button></td>
+                        <td><button class="btn" onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button class="btn2" style="height: 106px; width: 50px" onclick="calcular('=')">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="btn2" style="height: 50px; width: 106px" onclick="insert('0')">0</button></td>
+                        <td><button class="btn" onclick="insert('.')">.</buttonx></td>
+        
+                    </tr>
+                </table>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
