@@ -43,7 +43,10 @@ main{
 
 }
 
-.resultado{
+.display{
+    background-color: #ffffff;
+
+    height: 6vh;
     width: 29.7vh;
     margin-bottom: 1vh;
 
