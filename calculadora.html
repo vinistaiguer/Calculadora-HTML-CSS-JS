@@ -5,52 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULADORA</title>
-    <link rel="stylesheet" href="./style.css">
-    
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Roboto & display = swap" rel = "stylesheet ">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <title>Codando</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Font Awessome-->
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <!-- Prograss Bar-->
+    <script src="./assets/js/progressbar.min.js"></script>
+    <!-- Paralax-->
+    <script src=" h//cdn.jsdelivr.net /parallax.js/1.4.2/parallax.min.js " ></script>
 </head>
+
 <body>
-        <div class="fundo">
-            <h1 class="" style="color: rgb(255, 145, 0);">
-                <table class="tablebtn">
-                        <a href="https://www.w3schools.com/code/tryit.asp?filename=GPS6V5NV0SDR"><button id="htmlbtn" class="btn3">HTML</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://www.w3schools.com/code/tryit.asp?filename=GPS6XTVU2YWW"><button id="jsbtn" class="btn3">JavaScript</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://www.w3schools.com/code/tryit.asp?filename=GPS6WO3XDB89"><button id="cssbtn" class="btn3">CSS</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                </table>
-            </h1>
 
-            <div class="escritaLateral">
-                <h1 alt="nome1" class="nome1">VINICIUS</h1>
-                <H1 alt="nome2" class="nome2">STAIGUER</H1>
+
+        <header>
+            <div class="container" id="nav-container">
+  
+                <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                    <a class="navbar-brand" href="./login.html">
+                    <img class="navbar" id="logo" src="./img/olos_logo_branco.png" alt="Olos"> 
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" id="home-menu" href="https://www.w3schools.com/code/tryit.asp?filename=GPS6V5NV0SDR">HTML</a>
+                        <a class="nav-item nav-link" id="about-menu" href="https://www.w3schools.com/code/tryit.asp?filename=GPS6WO3XDB89">CSS</a>
+                        <a class="nav-item nav-link" id="services-menu" href="https://www.w3schools.com/code/tryit.asp?filename=GPS6XTVU2YWW">Java Script</Script></a>
+                    </div>
+                    </div>
+                </nav>
             </div>
+        </header>
 
+
+        <main>
+            
             <div class="calculadora">
 
-                <svg width="120" height="100" viewBox="0 0 40 60">
-                    <polygon class="triangulo" fill="none" stroke="#fff" stroke-width="2" points="16,1 32,32 1,32 "/>
-                    <text class="calcular" x="0" y="45" fill="#fff">Calculando...</text>
-                </svg>
-
-                <p id="resultado"></p>
+                <input class="resultado" type='text' id='resultado' readonly value='0' />
                 <table>
                     
                     <tr>
-                        <td><button class="btn" onclick="clean()" >C</button></td>
-                        <td><button class="btn" onclick="back()">
-                            <svg class="excluir" .excluir{width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"}>
-                            <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
-                            <line x1="18" y1="9" x2="12" y2="15" />
-                            <line x1="12" y1="9" x2="18" y2="15" />
-                          </svg>
-                          
-                        </button></td>
-                        <td><button class="btn" onclick="insert('/')">/</button></td>
+                        <td colspan="2"><button class="btn2" style="height: 7vh; width: 14.26vh" onclick="clean('')">C</button></td>
+                        <td><button class="btn" onclick="back()"><</button></td>
                         <td><button class="btn2" onclick="insert('*')">X</button></td>
                     </tr>
                     <tr>
                         <td><button class="btn" onclick="insert('7')">7</button></td>
                         <td><button class="btn" onclick="insert('8')">8</button></td>
                         <td><button class="btn" onclick="insert('9')">9</button></td>
-                        <td><button class="btn2">%</button></td>
+                        <td><button class="btn2" onclick="insert('/')">/</button></td>
                     </tr>
                     <tr>
                         <td><button class="btn" onclick="insert('4')">4</button></td>
@@ -62,20 +79,27 @@
                         <td><button class="btn" onclick="insert('1')">1</button></td>
                         <td><button class="btn" onclick="insert('2')">2</button></td>
                         <td><button class="btn" onclick="insert('3')">3</button></td>
-                        <td rowspan="2"><button class="btn2" style="height: 106px; width: 50px" onclick="calcular('=')">=</button></td>
+                        <td rowspan="2"><button class="btn2" style="height: 14.26vh; width: 7vh" onclick="calcular('=')">=</button></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><button class="btn2" style="height: 50px; width: 106px" onclick="insert('0')">0</button></td>
+                        <td colspan="2"><button class="btn2" style="height: 7vh; width: 14.26vh" onclick="insert('0')">0</button></td>
                         <td><button class="btn" onclick="insert('.')">.</buttonx></td>
         
                     </tr>
                 </table>
-                </table>
-            </div>
-        </div>
+             </div>
 
-    </div>
+             
 
-<script src="./script.js"></script>
+        </main>
+
+             
+        <footer>
+
+        </footer>
+
+
+        <script src="./js/script.js"></script>
+
 </body>
 </html>
