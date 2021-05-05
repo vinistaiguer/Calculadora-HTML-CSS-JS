@@ -62,3 +62,4 @@ function calcular(){
         return clean(), insert(calculo);
     }
 }
+
