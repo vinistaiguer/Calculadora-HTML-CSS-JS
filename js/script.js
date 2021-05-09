@@ -21,20 +21,12 @@ function back(){
 }
 
 
-function somar(number, num){
-    return parseInt(number) + parseInt(num) ;
 }
+const somar = (number, num) => parseInt(number) + parseInt(num);
 
+const subtrair = ( number, num ) => number - num; 
 
-function subtrair(number, num){
-    return number - num;
-}
-
-
-function multiplicar(number, num){
-    return number * num;
-}
-
+const multiplicar = ( number, num) =>  number * num; 
 
 function dividir(number, num){
     if(num == 0){
