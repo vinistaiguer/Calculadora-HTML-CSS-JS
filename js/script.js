@@ -21,7 +21,6 @@ function back(){
 }
 
 
-}
 const somar = (number, num) => parseInt(number) + parseInt(num);
 
 const subtrair = ( number, num ) => number - num; 
