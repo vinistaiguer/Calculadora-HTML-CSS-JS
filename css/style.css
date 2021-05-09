@@ -15,7 +15,6 @@ header{
     background-color: #000;
     height: 14vh;
     font-family: 'Roboto', sans-serif;
-
 }
 
 #logo{
@@ -69,16 +68,12 @@ main{
 
 .btn:hover{
     background-color: #6e6e6e;
-
 }
 
 .btn2{
     background-color: #ffa600;
-    border: none;
-    
+    border: none;  
 }
-
-
 
 .btn2{
     width: 7vh;
@@ -95,9 +90,7 @@ main{
     color: #ffffff;
 }
 
-
 footer{
     background-color: #000;
     height: 10vh;
 }
-
